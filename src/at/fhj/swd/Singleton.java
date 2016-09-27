@@ -12,8 +12,7 @@ public class Singleton {
 	 * all reads and writes will go straight to main memory.
 	 * 
 	 * Access to the variable acts as though it is enclosed in a synchronized block,
-	 * synchronized on itself. 
-	 * 
+	 * synchronized on itself.
 	*/
 	private volatile static Singleton uniqueInstance;
 
