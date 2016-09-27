@@ -20,8 +20,9 @@ public class Singleton {
 		System.out.println("Singleton constructor called");
 	}
 
+	// we could  also use public static synchronized requestInstance() instead to
+	// synchronize the whole function, but this would have a greater impact on performance
 	public static Singleton requestInstance() {
-		
 		if (uniqueInstance == null) {
 			// only synchronize the first time, since its very costly
 			synchronized (Singleton.class) {
